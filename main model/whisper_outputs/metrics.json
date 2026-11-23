@@ -1,0 +1,144 @@
+{
+  "baseline": {
+    "label": "baseline (pretrained, zero-shot)",
+    "n_test_utterances": 3942,
+    "n_test_speakers": 12,
+    "raw_wer": 0.5059327101627168,
+    "raw_cer": 0.38528384202032384,
+    "normalized_wer": 0.32260118597524573,
+    "normalized_cer": 0.21308531626202842,
+    "per_speaker_wer": [
+      {
+        "speaker_id": "943545ff-a91a-449d-a1bb-08dcc7adb730",
+        "n_utterances": 293.0,
+        "wer": 0.9895233106338397
+      },
+      {
+        "speaker_id": "05ec235d-75ba-4e9b-8bfb-08dbe1538f12",
+        "n_utterances": 133.0,
+        "wer": 0.8091517857142857
+      },
+      {
+        "speaker_id": "007861fa-c19f-4f14-7697-08dc54a70eeb",
+        "n_utterances": 162.0,
+        "wer": 0.7302416721097322
+      },
+      {
+        "speaker_id": "50594c91-060d-4b6e-43d8-08dca42d8162",
+        "n_utterances": 427.0,
+        "wer": 0.6910659615919844
+      },
+      {
+        "speaker_id": "00fda299-4331-4efe-03cf-08dd2552a33c",
+        "n_utterances": 194.0,
+        "wer": 0.5788409703504043
+      },
+      {
+        "speaker_id": "955905ec-f760-40de-2978-08dd6351487a",
+        "n_utterances": 164.0,
+        "wer": 0.5582635186595583
+      },
+      {
+        "speaker_id": "0012df94-51aa-4ad0-79db-08dd17980f6b",
+        "n_utterances": 429.0,
+        "wer": 0.5414012738853503
+      },
+      {
+        "speaker_id": "829b4984-09bb-40e9-f9a9-08ddc6074ec0",
+        "n_utterances": 422.0,
+        "wer": 0.4262890341321714
+      },
+      {
+        "speaker_id": "be731c5e-4bee-4993-72e0-08dd51fb5ebc",
+        "n_utterances": 430.0,
+        "wer": 0.3840294194904124
+      },
+      {
+        "speaker_id": "8e4386de-e685-45ae-8f23-08dcdbd22259",
+        "n_utterances": 429.0,
+        "wer": 0.3478844862323707
+      },
+      {
+        "speaker_id": "855424d7-22ff-4303-75a4-08dd3ba78fcd",
+        "n_utterances": 430.0,
+        "wer": 0.31642149504653255
+      },
+      {
+        "speaker_id": "5c8b9c7f-1ebb-4bd8-3aee-08dbe2b5c47a",
+        "n_utterances": 429.0,
+        "wer": 0.31357792411414237
+      }
+    ]
+  },
+  "finetuned": {
+    "label": "fine-tuned (whisper-large-v3, LoRA fine-tune)",
+    "n_test_utterances": 3942,
+    "n_test_speakers": 12,
+    "raw_wer": 0.4623422402668933,
+    "raw_cer": 0.37431204592075007,
+    "normalized_wer": 0.29072312651729215,
+    "normalized_cer": 0.21364093892176994,
+    "per_speaker_wer": [
+      {
+        "speaker_id": "943545ff-a91a-449d-a1bb-08dcc7adb730",
+        "n_utterances": 293.0,
+        "wer": 1.0193818753273964
+      },
+      {
+        "speaker_id": "007861fa-c19f-4f14-7697-08dc54a70eeb",
+        "n_utterances": 162.0,
+        "wer": 0.7740039190071848
+      },
+      {
+        "speaker_id": "50594c91-060d-4b6e-43d8-08dca42d8162",
+        "n_utterances": 427.0,
+        "wer": 0.7470080712496521
+      },
+      {
+        "speaker_id": "05ec235d-75ba-4e9b-8bfb-08dbe1538f12",
+        "n_utterances": 133.0,
+        "wer": 0.59375
+      },
+      {
+        "speaker_id": "00fda299-4331-4efe-03cf-08dd2552a33c",
+        "n_utterances": 194.0,
+        "wer": 0.45350404312668463
+      },
+      {
+        "speaker_id": "0012df94-51aa-4ad0-79db-08dd17980f6b",
+        "n_utterances": 429.0,
+        "wer": 0.438105787870396
+      },
+      {
+        "speaker_id": "955905ec-f760-40de-2978-08dd6351487a",
+        "n_utterances": 164.0,
+        "wer": 0.42345773038842344
+      },
+      {
+        "speaker_id": "829b4984-09bb-40e9-f9a9-08ddc6074ec0",
+        "n_utterances": 422.0,
+        "wer": 0.3752118131203099
+      },
+      {
+        "speaker_id": "be731c5e-4bee-4993-72e0-08dd51fb5ebc",
+        "n_utterances": 430.0,
+        "wer": 0.34541633832413976
+      },
+      {
+        "speaker_id": "8e4386de-e685-45ae-8f23-08dcdbd22259",
+        "n_utterances": 429.0,
+        "wer": 0.3022162525184688
+      },
+      {
+        "speaker_id": "5c8b9c7f-1ebb-4bd8-3aee-08dbe2b5c47a",
+        "n_utterances": 429.0,
+        "wer": 0.28096582000627157
+      },
+      {
+        "speaker_id": "855424d7-22ff-4303-75a4-08dd3ba78fcd",
+        "n_utterances": 430.0,
+        "wer": 0.26148303812668866
+      }
+    ]
+  }
+}

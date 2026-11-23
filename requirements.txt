@@ -2,7 +2,10 @@ torch
 transformers
 librosa
 flask
+flask-cors
 gtts
 sentencepiece
 accelerate
 safetensors
+pywebview
+peft

@@ -18,7 +18,7 @@ from transformers import WhisperProcessor, WhisperForConditionalGeneration
 # CONFIG
 # -----------------------------------------
 
-WHISPER_MODEL_PATH = "models/FINAL_WHISPER_MODEL_APRIL/FINAL_WHISPER_MODEL_APRIL"
+WHISPER_MODEL_PATH = "openai/whisper-medium"
 DEFAULT_TEST_AUDIO  = "test_audio/ivan.wav"
 CHUNK_SECONDS       = 30        # Whisper's max input size
 OVERLAP_SECONDS     = 1         # Small overlap to avoid cutting words mid-sentence
@@ -103,10 +103,15 @@ def transcribe(audio_file):
 
         inputs = processor(chunk, sampling_rate=sr, return_tensors="pt")
 
+        forced_decoder_ids = processor.get_decoder_prompt_ids(
+            language="en",
+            task="transcribe",
+        )
+
         with torch.no_grad():
             predicted_ids = speech_model.generate(
                 inputs.input_features,
-                language="en"
+                forced_decoder_ids=forced_decoder_ids,
             )
 
         chunk_text = processor.batch_decode(predicted_ids, skip_special_tokens=True)[0].strip()
